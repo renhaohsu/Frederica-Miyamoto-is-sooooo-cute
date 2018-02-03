@@ -1,0 +1,46 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+*, *.before, *.after {
+  font-family: "Noto Sans TC";
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(https://i.imgur.com/HMBBNmK.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.postit {
+  width: 17%;
+  height: 41%;
+  left: 100px;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-image: url(https://pbs.twimg.com/media/CizWTJbXEAArrNv.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.datalist {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 3%;
+}
+
+#a {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+#b {
+  position: fixed;
+  right: 20px;
+  top: 70px;
+}

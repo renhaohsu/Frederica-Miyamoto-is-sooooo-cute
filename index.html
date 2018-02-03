@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>1234</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<div id="app">
+  <div class="postit" id="i" v-for="(p,pid) in postits" :style="postitCss(p)" @mousedown="selectId($event,pid)"></div>
+  <button id="a" onclick="move()">芙蕾醬飄移</button>
+  <button id="b" onclick="changeImage()">芙蕾醬擺pose</button>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

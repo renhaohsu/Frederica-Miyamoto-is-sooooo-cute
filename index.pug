@@ -1,0 +1,13 @@
+#app
+  .postit#i(v-for="(p,pid) in postits",
+          :style="postitCss(p)",
+          @mousedown="selectId($event,pid)")
+  
+  //- ul.datalist
+    li
+      h1(style="color: white") {{nowId}}
+      button(@click="addPostit") +新增
+      
+  button#a(onclick="move()") 芙蕾醬飄移
+  
+  button#b(onclick="changeImage()") 芙蕾醬擺pose
