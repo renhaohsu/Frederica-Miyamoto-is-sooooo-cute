@@ -9,9 +9,12 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-image: url(https://i.imgur.com/HMBBNmK.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+body{
+  background-image: url(https://i.imgur.com/HMBBNmK.png);
 }
 
 .postit {
@@ -42,5 +45,61 @@ html, body {
 #b {
   position: fixed;
   right: 20px;
-  top: 70px;
+  top: 80px;
+}
+
+
+#c {
+  position: fixed;
+  right: 20px;
+  top: 140px;
+}
+
+
+
+
+.header {
+  width: 100%;
+  height: 56px;
+  color: #FFF;
+  background: #3F51B5;
+  position: fixed;
+  font-size: 36px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  display: flex;
+}
+.loader {
+  visibility: hidden;
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%); }
+.loader #spinner {
+    box-sizing: border-box;
+    stroke: #ffafaf;
+    stroke-width: 15px;
+    stroke-opacity: 0.4;
+    transform-origin: 50%;
+    animation: line 2.7s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 2.7s linear infinite; 
+}
+
+@keyframes rotate {
+from {
+    transform: rotate(0); }
+to {
+    transform: rotate(450deg); }
+}
+
+@keyframes line {
+0% {
+  stroke-dasharray: 20, 859.64;
+        transform: rotate(0); }
+50% {
+  stroke-dasharray: 659.73, 219.911;
+  stroke-dashoffset: 0; }
+100% {
+  stroke-dasharray: 20, 859.64;
+  stroke-dashoffset: -659.73;
+    transform: rotate(90deg); }
 }

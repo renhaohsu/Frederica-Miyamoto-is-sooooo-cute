@@ -19,10 +19,19 @@
   <div class="postit" id="i" v-for="(p,pid) in postits" :style="postitCss(p)" @mousedown="selectId($event,pid)"></div>
   <button id="a" onclick="move()">芙蕾醬飄移</button>
   <button id="b" onclick="changeImage()">芙蕾醬擺pose</button>
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
 
-  
+  <button id="c" onclick="loading()">chrome轉轉轉</button>
+</div>
+
+
+  <div class="loader">
+    <svg viewBox="0 0 340 340" width="340" height="340">
+      <circle id="spinner" cx="170" cy="170" r="140" fill="none"></circle>
+    </svg>
+  </div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>  
 
     <script  src="js/index.js"></script>
 

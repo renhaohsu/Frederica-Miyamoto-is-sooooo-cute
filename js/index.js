@@ -86,3 +86,31 @@ function changeImage(){
     element.style.backgroundImage = "url(https://pbs.twimg.com/media/CizWTGEWkAARm8O.png)"}  
   if (time1 > 3){ time1 = 1 }    
 }
+
+function loading(){
+  changeImage();
+  move();
+
+  var body = document.getElementsByTagName('body');
+  body[0].style.backgroundImage = 'none';
+  body[0].style.backgroundColor = '#987654';
+
+  var a = document.getElementById('a');
+  a.style.display = 'none';
+
+  var b = document.getElementById('b');
+  b.style.display = 'none';
+
+  var c = document.getElementById('c');
+  c.style.display = 'none';
+
+
+
+  loader = document.getElementsByClassName('loader');
+  loader[0].style.visibility = 'visible';
+  // if(loader[0].style.visibility == 'hidden'){
+  //   loader[0].style.visibility = 'visible';
+  // } else {
+  //   loader[0].style.visibility = 'hidden';
+  // }
+}
