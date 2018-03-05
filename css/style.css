@@ -14,7 +14,7 @@ html, body {
 }
 
 body{
-  background-image: url(https://i.imgur.com/HMBBNmK.png);
+  background-image: url(../images/background.png);
 }
 
 .postit {
@@ -24,11 +24,9 @@ body{
   position: absolute;
   cursor: pointer;
   transition: all 0.3s;
-  background-image: url(https://pbs.twimg.com/media/CizWTJbXEAArrNv.png);
+  background-image: url(../images/FreChan3.png);
   background-size: contain;
   background-repeat: no-repeat;
-  
-  z-index: 1;
 }
 
 .datalist {
@@ -76,9 +74,7 @@ body{
   left: 50%;
   top: 50%;
   position: fixed;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-}
+  transform: translate(-50%, -50%); }
 .loader #spinner {
     box-sizing: border-box;
     stroke: #ffafaf;
