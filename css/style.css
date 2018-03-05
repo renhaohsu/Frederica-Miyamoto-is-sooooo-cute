@@ -27,6 +27,8 @@ body{
   background-image: url(https://pbs.twimg.com/media/CizWTJbXEAArrNv.png);
   background-size: contain;
   background-repeat: no-repeat;
+  
+  z-indez: 1;
 }
 
 .datalist {
@@ -74,7 +76,9 @@ body{
   left: 50%;
   top: 50%;
   position: fixed;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
 .loader #spinner {
     box-sizing: border-box;
     stroke: #ffafaf;
