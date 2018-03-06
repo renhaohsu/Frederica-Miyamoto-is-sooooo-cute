@@ -95,6 +95,10 @@ function loading(){
   body[0].style.backgroundImage = 'none';
   body[0].style.backgroundColor = '#987654';
 
+  var scalePostit = document.getElementsByClassName('postit');
+  scalePostit[0].style.width = '8%'
+  scalePostit[0].style.height = '20%'
+
   var a = document.getElementById('a');
   a.style.display = 'none';
 
