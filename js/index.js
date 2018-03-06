@@ -79,11 +79,11 @@ function changeImage(){
     setTimeout(changeImage,1000)
   }
   if (time1 % 3 == 0){
-    element.style.backgroundImage = "url(../images/FreChan3.png)"}  
+    element.style.backgroundImage = "url(images/FreChan3.png)"}  
   if (time1 % 3 == 1){
-    element.style.backgroundImage = "url(../images/FreChan2.png)"}
+    element.style.backgroundImage = "url(images/FreChan2.png)"}
   if (time1 % 3 == 2){
-    element.style.backgroundImage = "url(../images/FreChan1.png)"}  
+    element.style.backgroundImage = "url(images/FreChan1.png)"}  
   if (time1 > 3){ time1 = 1 }    
 }
 
