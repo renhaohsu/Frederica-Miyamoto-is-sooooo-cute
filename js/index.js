@@ -93,12 +93,26 @@ function loading(){
 
   var body = document.getElementsByTagName('body');
   body[0].style.backgroundImage = 'none';
-  body[0].style.backgroundColor = '#987654';
-
+  body[0].style.backgroundColor = '#180439';
+  
   var scalePostit = document.getElementsByClassName('postit');
   scalePostit[0].style.width = '8%'
   scalePostit[0].style.height = '20%'
 
+  var docElm = document.documentElement;
+	if (docElm.requestFullscreen) {
+	    docElm.requestFullscreen();
+	}
+	else if (docElm.mozRequestFullScreen) {
+	    docElm.mozRequestFullScreen();
+	}
+	else if (docElm.webkitRequestFullScreen) {
+	    docElm.webkitRequestFullScreen();
+	}
+	else if (docElm.msRequestFullscreen) {
+	    docElm.msRequestFullscreen();
+	}
+	
   var a = document.getElementById('a');
   a.style.display = 'none';
 

@@ -27,6 +27,7 @@ body{
   background-image: url(../images/FreChan3.png);
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .datalist {
@@ -74,7 +75,9 @@ body{
   left: 50%;
   top: 50%;
   position: fixed;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  z-index: 0; 
+}
 .loader #spinner {
     box-sizing: border-box;
     stroke: #ffafaf;
